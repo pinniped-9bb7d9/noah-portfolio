@@ -11,13 +11,13 @@ function Projects() {
       title: "Damsel's Gambit",
       description: 'Anti-dating simulator card game where you try your best to deter a potential royal suitor without bruising his ego.',
       gif: damselsGambitGif,
-      link: '#projects',
+      link: 'https://roxo-hyrax.itch.io/damsels-gambit',
     },
     {
       title: 'Field Scene',
       description: 'Collection of shaders built upon a DirectX framework to create a cinematic wheat field and abandoned mill scene.',
       gif: fieldSceneGif,
-      link: '#projects',
+      link: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
     }
   ];
 
@@ -49,7 +49,7 @@ function Projects() {
             <img src={project.gif} alt={`${project.title} preview`} className="project-gif" />
             <h3>{project.title}</h3>
             <p>{project.description}</p>
-            <a href={project.link} className="btn" onClick={() => setActiveProject(project)}>View Project</a>
+            <a className="btn" onClick={() => setActiveProject(project)}>View Project</a>
           </div>
         ))}
       </div>
@@ -61,6 +61,7 @@ function Projects() {
                 <img src={activeProject.gif} alt={`${activeProject.title} full`} className="modal-gif" />
                 <div className="modal-details">
                 <h3>{activeProject.title}</h3>
+                <a href={activeProject.link} target="_blank" rel="noopener noreferrer">link</a>
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis, quas qui. Quos perferendis voluptates, illum harum maxime odio reprehenderit impedit similique consectetur tempore, dolorum, dolore ullam eveniet aliquam repudiandae temporibus?</p>
                 </div>
             </div>
