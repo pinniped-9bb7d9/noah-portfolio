@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './Projects.css';
+import damselsGambitGif from '/assets/damsels_gambit.gif';
+import fieldSceneGif from '/assets/field_scene.gif';
 
 function Projects() {
   const [activeProject, setActiveProject] = useState(null);
@@ -8,13 +10,13 @@ function Projects() {
     {
       title: "Damsel's Gambit",
       description: 'Anti-dating simulator card game where you try your best to deter a potential royal suitor without bruising his ego.',
-      gif: '/assets/damsels_gambit.gif',
+      gif: damselsGambitGif,
       link: '#projects',
     },
     {
       title: 'Field Scene',
       description: 'Collection of shaders built upon a DirectX framework to create a cinematic wheat field and abandoned mill scene.',
-      gif: '/assets/field_scene.gif',
+      gif: fieldSceneGif,
       link: '#projects',
     }
   ];
