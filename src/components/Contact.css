@@ -5,7 +5,7 @@
 }
 
 .contact {
-  background-image: url('public/assets/background_glitched_blue.jpg');
+  background-image: url('/assets/background_glitched_blue.jpg');
   padding: 4rem 2rem;
   color: white;
   text-align: center;

@@ -8,13 +8,13 @@ function Projects() {
     {
       title: "Damsel's Gambit",
       description: 'Anti-dating simulator card game where you try your best to deter a potential royal suitor without bruising his ego.',
-      gif: 'public/assets/damsels_gambit.gif',
+      gif: '/assets/damsels_gambit.gif',
       link: '#projects',
     },
     {
       title: 'Field Scene',
       description: 'Collection of shaders built upon a DirectX framework to create a cinematic wheat field and abandoned mill scene.',
-      gif: 'public/assets/field_scene.gif',
+      gif: '/assets/field_scene.gif',
       link: '#projects',
     }
   ];
