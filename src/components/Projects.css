@@ -1,0 +1,149 @@
+.projects {
+  background-image: url('../assets/background_glitched_green.jpg');
+  padding: 4rem 2rem;
+  color: white;
+  text-align: center;
+}
+
+.projects h2 {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+  font-family: 'Roboto Mono', monospace;
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+.project-card {
+  background-color: rgba(0, 0, 0, 0.2);
+  padding: 2rem;
+  border-radius: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.project-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  font-family: 'Roboto Mono', monospace;
+}
+
+.project-card p {
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.project-card .btn {
+  background-color: white;
+  color: #0a573a;
+  padding: 0.75rem 1.5rem;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  display: inline-block;
+}
+
+.project-gif {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.project-card {
+  opacity: 0;
+  animation: fadeIn 0.8s ease forwards;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100vw; height: 100vh;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background: white;
+  color: #2a5298;
+  padding: 2rem;
+  border-radius: 10px;
+  max-width: 900px;
+  width: 90%;
+  position: relative;
+  animation: fadeIn 0.4s ease;
+}
+
+.modal-body {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  align-items: flex-start;
+}
+
+.modal-gif {
+  width: 50%;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.modal-details {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.modal-details h3 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  font-family: 'Roboto Mono', monospace;
+}
+
+.modal-details p {
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+}
+
+.modal-details .btn {
+  background-color: #2a5298;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  display: inline-block;
+}
+
+.close-btn {
+  position: absolute;
+  top: 1rem; right: 1rem;
+  background: none;
+  border: none;
+  font-size: 2rem;
+  color: #2a5298;
+  cursor: pointer;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.95); }
+  to { opacity: 1; transform: scale(1); }
+}
+
