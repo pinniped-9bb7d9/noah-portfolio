@@ -13,7 +13,6 @@ function Projects() {
       detail: 'As part of a team of eight, we developed this game over the span of a semester using Godot, C# and an experimental integration of Yarnspinner. My main responsibility lied in the planing (Notion), implementation (Yarnspinner) and bug fixing of dialogue (Godot + C#).',
       gif: damselsGambitGif,
       link: 'https://roxo-hyrax.itch.io/damsels-gambit',
-      detail: '',
     },
     {
       title: 'Field Scene',
@@ -65,7 +64,7 @@ function Projects() {
                 <div className="modal-details">
                 <h3>{activeProject.title}</h3>
                 <a href={activeProject.link} target="_blank" rel="noopener noreferrer">link</a>
-                <p>{project.detail}</p>
+                <p>{activeProject.detail}</p>
                 </div>
             </div>
             <button className="close-btn" onClick={() => setActiveProject(null)}>×</button>
