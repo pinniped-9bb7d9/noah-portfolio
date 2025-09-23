@@ -10,12 +10,15 @@ function Projects() {
     {
       title: "Damsel's Gambit",
       description: 'Anti-dating simulator card game where you try your best to deter a potential royal suitor without bruising his ego.',
+      detail: 'As part of a team of eight, we developed this game over the span of a semester using Godot, C# and an experimental integration of Yarnspinner. My main responsibility lied in the planing (Notion), implementation (Yarnspinner) and bug fixing of dialogue (Godot + C#).',
       gif: damselsGambitGif,
       link: 'https://roxo-hyrax.itch.io/damsels-gambit',
+      detail: '',
     },
     {
       title: 'Field Scene',
       description: 'Collection of shaders built upon a DirectX framework to create a cinematic wheat field and abandoned mill scene.',
+      detail: 'Programmed in C++ and HLSL, I designed and implemented various shaders including across the whole graphic pipeline including vertex, pixel, geometry, hull, and domain shaders to achieve effective lighting and atmospheric effects.',
       gif: fieldSceneGif,
       link: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
     }
@@ -62,7 +65,7 @@ function Projects() {
                 <div className="modal-details">
                 <h3>{activeProject.title}</h3>
                 <a href={activeProject.link} target="_blank" rel="noopener noreferrer">link</a>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis, quas qui. Quos perferendis voluptates, illum harum maxime odio reprehenderit impedit similique consectetur tempore, dolorum, dolore ullam eveniet aliquam repudiandae temporibus?</p>
+                <p>{project.detail}</p>
                 </div>
             </div>
             <button className="close-btn" onClick={() => setActiveProject(null)}>×</button>
