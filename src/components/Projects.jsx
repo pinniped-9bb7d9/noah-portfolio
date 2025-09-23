@@ -17,7 +17,7 @@ function Projects() {
     {
       title: 'Field Scene',
       description: 'Collection of shaders built upon a DirectX framework to create a cinematic wheat field and abandoned mill scene.',
-      detail: 'Programmed in C++ and HLSL, I designed and implemented various shaders including across the whole graphic pipeline including vertex, pixel, geometry, hull, and domain shaders to achieve effective lighting and atmospheric effects.',
+      detail: 'Programmed in C++ and HLSL, I designed and implemented various shaders across the whole graphic pipeline including vertex, pixel, geometry, hull, and domain shaders to achieve effective lighting and atmospheric effects.',
       gif: fieldSceneGif,
       link: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
     }
