@@ -11,7 +11,7 @@ function App() {
     <>
       <Hero/>
       <Projects/>
-      <Contact/>
+      {/*<Contact/>*/}
     </>
   );
 }
