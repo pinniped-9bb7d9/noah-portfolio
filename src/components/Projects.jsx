@@ -13,6 +13,7 @@ function Projects() {
       detail: 'As part of a team of eight, we developed this game over the span of a semester using Godot, C# and an experimental integration of Yarnspinner. My main responsibility lied in the planing (Notion), implementation (Yarnspinner) and bug fixing of dialogue (Godot + C#).',
       gif: damselsGambitGif,
       link: 'https://roxo-hyrax.itch.io/damsels-gambit',
+      link_preview: 'itch.io',
     },
     {
       title: 'Field Scene',
@@ -20,6 +21,7 @@ function Projects() {
       detail: 'Programmed in C++ and HLSL, I designed and implemented various shaders across the whole graphic pipeline including vertex, pixel, geometry, hull, and domain shaders to achieve effective lighting and atmospheric effects.',
       gif: fieldSceneGif,
       link: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
+      link_preview: 'Placeholder Link',
     }
   ];
 
@@ -63,7 +65,7 @@ function Projects() {
                 <img src={activeProject.gif} alt={`${activeProject.title} full`} className="modal-gif" />
                 <div className="modal-details">
                 <h3>{activeProject.title}</h3>
-                <a href={activeProject.link} target="_blank" rel="noopener noreferrer">link</a>
+                <a href={activeProject.link} target="_blank" rel="noopener noreferrer">{activeProject.link_preview}</a>
                 <p>{activeProject.detail}</p>
                 </div>
             </div>
