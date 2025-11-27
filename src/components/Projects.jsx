@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import './Projects.css';
 import damselsGambitGif from '/assets/damsels_gambit.gif';
 import fieldSceneGif from '/assets/field_scene.gif';
+import internationalWatersGif from '/assets/international_waters.gif';
 
 function Projects() {
   const [activeProject, setActiveProject] = useState(null);
@@ -22,6 +23,14 @@ function Projects() {
       gif: fieldSceneGif,
       link: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
       link_preview: 'Placeholder Link',
+    },
+    {
+      title: 'International Waters (Do Not Count)',
+      description: '3D isometric arcade game where you power up your boat by obliterating the vessels (and bodies) of others on the water.',
+      detail: "Programmed in Unity using C# for the week-long Abertay University 2025 Fresher's Fair game jam. I worked within a cross disciplinary team of 7 as a technical artist and programmer. This was my first experience experimenting with the VFX suite within Unity. I designed effects, with their timings and activation triggers, using the engine's editor interface and code to enhance player experience.",
+      gif: internationalWatersGif,
+      link: 'https://n0-0nt1d3.itch.io/international-waters-do-not-count',
+      link_preview: 'itch.io',
     }
   ];
 
